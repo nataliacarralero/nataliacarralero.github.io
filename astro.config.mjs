@@ -7,5 +7,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://nataliacarralero.github.io/',
   integrations: [mdx(), sitemap(), tailwind()],
-  base: 'nataliacarralero.github.io',
+  //base: 'nataliacarralero.github.io',
 });
