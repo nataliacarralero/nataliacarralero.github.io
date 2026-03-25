@@ -6,7 +6,7 @@ module.exports = {
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {
-		themes: ["light"], // forced theme: only light
+		themes: true, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
 		logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
 	  }
 }
