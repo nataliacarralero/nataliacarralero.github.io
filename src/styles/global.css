@@ -11,7 +11,7 @@ body {
 /* ── Section labels (monospace uppercase burgundy) ── */
 .section-label {
   font-family: monospace;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #7D2035;
