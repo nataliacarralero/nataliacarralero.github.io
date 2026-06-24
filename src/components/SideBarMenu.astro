@@ -1,36 +1,31 @@
 ---
 const { sideBarActiveItemID } = Astro.props;
-const activeClass = "bg-[#F0E0E0]"; // For primary color replace with `active` class
 ---
 
-<ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-[#7D2035]" id="home" href="/">Home</a></li>
-    <li>
-        <a class="py-3 text-[#7D2035]" id="research" href="/research">Research</a>
+<nav class="grow shrink overflow-y-auto">
+  <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;">
+    <li style="border-bottom:1px solid #E5DED4;">
+      <a id="home" href="/" style="display:block;padding:10px 0;font-family:'Lora',serif;font-size:14px;color:#3A3330;text-decoration:none;letter-spacing:0.02em;">Home</a>
     </li>
-     <li>
-        <a class="py-3 text-[#7D2035]" id="teaching" href="/teaching">Teaching</a>
-    </li>   
-    <li>
-        <a class="py-3 text-[#7D2035]" id="presentations" href="/presentations">Conferences and seminars</a>
+    <li style="border-bottom:1px solid #E5DED4;">
+      <a id="research" href="/research" style="display:block;padding:10px 0;font-family:'Lora',serif;font-size:14px;color:#3A3330;text-decoration:none;letter-spacing:0.02em;">Research</a>
     </li>
-    <!-- <li><a class="py-3 text-base" id="services" href="/teaching">Teaching</a></li> -->
-    <li>
-        <a
-            class="py-3 text-[#7D2035]"
-            id="cv"
-            href="/CV_Natalia_Carralero.pdf"
-            target="_blank">CV</a
-        >
+    <li style="border-bottom:1px solid #E5DED4;">
+      <a id="teaching" href="/teaching" style="display:block;padding:10px 0;font-family:'Lora',serif;font-size:14px;color:#3A3330;text-decoration:none;letter-spacing:0.02em;">Teaching</a>
     </li>
-</ul>
+    <li style="border-bottom:1px solid #E5DED4;">
+      <a id="presentations" href="/presentations" style="display:block;padding:10px 0;font-family:'Lora',serif;font-size:14px;color:#3A3330;text-decoration:none;letter-spacing:0.02em;">Conferences &amp; Seminars</a>
+    </li>
+    <li>
+      <a id="cv" href="/CV_Natalia_Carralero.pdf" target="_blank" style="display:block;padding:10px 0;font-family:'Lora',serif;font-size:14px;color:#3A3330;text-decoration:none;letter-spacing:0.02em;">CV</a>
+    </li>
+  </ul>
+</nav>
 
-<script
-    define:vars={{
-        sideBarActiveItemID: sideBarActiveItemID,
-        activeClass: activeClass,
-    }}
->
-    const activeItemElem = document.getElementById(sideBarActiveItemID);
-    activeItemElem && activeItemElem.classList.add(activeClass);
+<script define:vars={{ sideBarActiveItemID }}>
+  const el = document.getElementById(sideBarActiveItemID);
+  if (el) {
+    el.style.color = '#7D2035';
+    el.style.fontWeight = '500';
+  }
 </script>

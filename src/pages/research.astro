@@ -1,79 +1,98 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title="Research" sideBarActiveItemID="research">
   <div class="pb-12 mt-5">
 
-    <div class="text-3xl py-3 font-bold">Working papers</div>
-    <div class="py-2">
-      <text class="text-lg">
-        <ul class="pl-5">
-          <li style="list-style-type: disc;">
-            <a href="https://paths2include.eu/publications/gender-norms-and-parents-employment-characteristics-in-europe/" target="_blank"><b>Gender norms and parents' employment characteristics in Europe</b></a> (with Sara Ayllón) 
-          </li>
-      </ul>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:#1C1917;letter-spacing:-0.01em;line-height:1.1;margin-bottom:48px;">Research</h2>
+
+    <!-- Working Papers -->
+    <div style="margin-bottom:44px;">
+      <span class="section-label">Working Papers</span>
+      <div style="border-top:1px solid #E8E2D9;">
+        <div class="entry-row">
+          <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;">
+            <a href="https://paths2include.eu/publications/gender-norms-and-parents-employment-characteristics-in-europe/" target="_blank" style="font-family:'Lora',serif;font-size:17px;font-weight:500;color:#7D2035;text-decoration:none;border-bottom:1px solid rgba(125,32,53,0.32);line-height:1.55;">
+              Gender norms and parents' employment characteristics in Europe
+            </a>
+            <button class="abstract-btn" data-target="abstract-paper1">Abstract ↓</button>
+          </div>
+          <p style="font-family:'Lora',serif;font-size:14px;color:#6B6460;margin-top:8px;font-style:italic;">with Sara Ayllón</p>
+          <div id="abstract-paper1" class="abstract-panel">
+            <!-- Replace this with your abstract text -->
+            Add your abstract here.
+          </div>
+        </div>
       </div>
-
-
-    <hr class="my-5 border-gray-400" />
-
-    <div class="text-3xl py-3 font-bold">Work in progress</div>
-    <div class="py-2">
-      <text class="text-lg">
-        <ul class="pl-5">
-          <li style="list-style-type: disc;">
-              Unpacking the null impact of paternity leave extensions on fertility and labour market outcomes (with Sara Ayllón)
-            </li>           
-        </ul>
-      </div>
-
-
-    <hr class="my-5 border-gray-400" />
-    <div class="text-3xl py-3 font-bold">Participation in projects</div>
-    <div class="py-2">
-      <text class="text-lg">
-        <ul class="list-disc pl-5">
-         
-          <li>
-            <b>
-              Paternity leave reforms in Spain: Impacts on fertility and labour market outcomes
-            </b>
-          </li>
-          <p>
-            Funding entity: Women Institute, Spanish Ministry of Equality <p>
-              PI: <a href="http://www.saraayllon.eu/" target="_blank">Sara Ayllón</a> <p>
-              Date: 2024-2025 <br><br>
-          </p>
-          <li>
-            <b>
-              Reformas del permiso de paternidad en España: impacto sobre la fecundidad y la actividad laboral
-            </b>
-          </li>
-          <p>
-            Funding entity: Institute of Fiscal Studies <p>
-              PI: <a href="http://www.saraayllon.eu/" target="_blank">Sara Ayllón</a> <p>
-              Date: 2024-2025 <br><br>
-          </p>
-          <li>
-            <b>
-              <a href="https://paths2include.eu/" target="_blank"
-                >PATHS2INCLUDE</a>:
-              European labour markets under pressure - New knowledge on
-              pathways to include persons in vulnerable situations
-            </b>
-          </li>
-          <p>
-            Funding entity: Horizon Europe, European Commission <p>
-              PI: <a href="http://www.saraayllon.eu/" target="_blank">Sara Ayllón</a> <p>
-              Date: 2024-2029 <br><br>
-
-          </p>
-
-          <div class="mt-8"></div>
-        </ul>
-      </text>
     </div>
-  </div></BaseLayout
->
+
+    <!-- Work in Progress -->
+    <div style="margin-bottom:44px;">
+      <span class="section-label">Work in Progress</span>
+      <div style="border-top:1px solid #E8E2D9;">
+        <div class="entry-row">
+          <p style="font-family:'Lora',serif;font-size:17px;font-weight:500;color:#1C1917;line-height:1.55;max-width:640px;">
+            Unpacking the null impact of paternity leave extensions on fertility and labour market outcomes
+          </p>
+          <p style="font-family:'Lora',serif;font-size:14px;color:#6B6460;margin-top:8px;font-style:italic;">with Sara Ayllón</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Participation in Projects -->
+    <div>
+      <span class="section-label">Participation in Projects</span>
+      <div style="border-top:1px solid #E8E2D9;">
+
+        <div class="entry-row">
+          <p style="font-family:'Lora',serif;font-size:16px;font-weight:600;color:#1C1917;line-height:1.5;margin-bottom:10px;max-width:640px;">
+            Paternity leave reforms in Spain: Impacts on fertility and labour market outcomes
+          </p>
+          <div style="display:flex;flex-direction:column;gap:3px;">
+            <p style="font-family:'Lora',serif;font-size:13px;color:#6B6460;">Funding entity: Women Institute, Spanish Ministry of Equality</p>
+            <p style="font-family:'Lora',serif;font-size:13px;color:#6B6460;">PI: <a href="http://www.saraayllon.eu/" target="_blank" style="color:#7D2035;text-decoration:none;border-bottom:1px solid rgba(125,32,53,0.32);">Sara Ayllón</a></p>
+            <p style="font-family:monospace;font-size:9px;color:#7D2035;letter-spacing:0.1em;text-transform:uppercase;margin-top:4px;">2024–2025</p>
+          </div>
+        </div>
+
+        <div class="entry-row">
+          <p style="font-family:'Lora',serif;font-size:16px;font-weight:600;color:#1C1917;line-height:1.5;margin-bottom:10px;max-width:640px;">
+            Reformas del permiso de paternidad en España: impacto sobre la fecundidad y la actividad laboral
+          </p>
+          <div style="display:flex;flex-direction:column;gap:3px;">
+            <p style="font-family:'Lora',serif;font-size:13px;color:#6B6460;">Funding entity: Institute of Fiscal Studies</p>
+            <p style="font-family:'Lora',serif;font-size:13px;color:#6B6460;">PI: <a href="http://www.saraayllon.eu/" target="_blank" style="color:#7D2035;text-decoration:none;border-bottom:1px solid rgba(125,32,53,0.32);">Sara Ayllón</a></p>
+            <p style="font-family:monospace;font-size:9px;color:#7D2035;letter-spacing:0.1em;text-transform:uppercase;margin-top:4px;">2024–2025</p>
+          </div>
+        </div>
+
+        <div class="entry-row">
+          <p style="font-family:'Lora',serif;font-size:16px;font-weight:600;color:#1C1917;line-height:1.5;margin-bottom:10px;max-width:640px;">
+            <a href="https://paths2include.eu/" target="_blank" style="color:#7D2035;text-decoration:none;border-bottom:1px solid rgba(125,32,53,0.32);">PATHS2INCLUDE</a>: European labour markets under pressure — New knowledge on pathways to include persons in vulnerable situations
+          </p>
+          <div style="display:flex;flex-direction:column;gap:3px;">
+            <p style="font-family:'Lora',serif;font-size:13px;color:#6B6460;">Funding entity: Horizon Europe, European Commission</p>
+            <p style="font-family:'Lora',serif;font-size:13px;color:#6B6460;">PI: <a href="http://www.saraayllon.eu/" target="_blank" style="color:#7D2035;text-decoration:none;border-bottom:1px solid rgba(125,32,53,0.32);">Sara Ayllón</a></p>
+            <p style="font-family:monospace;font-size:9px;color:#7D2035;letter-spacing:0.1em;text-transform:uppercase;margin-top:4px;">2024–2029</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    document.querySelectorAll('.abstract-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const panel = document.getElementById(targetId);
+        const isOpen = panel.classList.contains('open');
+        panel.classList.toggle('open');
+        btn.textContent = isOpen ? 'Abstract ↓' : 'Abstract ↑';
+      });
+    });
+  </script>
+
+</BaseLayout>
