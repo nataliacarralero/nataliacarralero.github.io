@@ -87,9 +87,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     document.querySelectorAll('.abstract-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const targetId = btn.getAttribute('data-target');
-        if (!targetId) return;
         const panel = document.getElementById(targetId);
-        if (!panel) return;
         const isOpen = panel.classList.contains('open');
         panel.classList.toggle('open');
         btn.textContent = isOpen ? 'Abstract ↓' : 'Abstract ↑';
